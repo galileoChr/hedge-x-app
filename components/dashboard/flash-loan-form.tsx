@@ -56,7 +56,7 @@ export function FlashLoanForm({ onSimulate, onExecute }) {
   return (
     <Card className="p-6 space-y-6">
       <div className="space-y-2">
-        <Label>Token to Borrow</Label>
+        <Label>Trading Asset</Label>
         <Select value={token} onValueChange={setToken}>
           <SelectTrigger>
             <SelectValue placeholder="Select token" />
@@ -75,7 +75,7 @@ export function FlashLoanForm({ onSimulate, onExecute }) {
       </div>
 
       <div className="space-y-2">
-        <Label>Borrow Amount</Label>
+        <Label>Trade Amount</Label>
         <Input
           type="number"
           placeholder="0.00"
@@ -112,7 +112,7 @@ export function FlashLoanForm({ onSimulate, onExecute }) {
           onCheckedChange={setSimulation}
           id="simulation"
         />
-        <Label htmlFor="simulation">Enable Simulation Mode</Label>
+        <Label htmlFor="simulation">Enable Dry Run Mode</Label>
       </div>
 
       <div className="space-x-4">
@@ -120,7 +120,7 @@ export function FlashLoanForm({ onSimulate, onExecute }) {
           onClick={handleSimulate}
           className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600"
         >
-          Simulate Trade
+          Dry Run Strategy
         </Button>
         <Button
           onClick={handleExecute}

@@ -7,17 +7,17 @@ export function SimulationResult({ result }) {
   return (
     <Card className="p-6 space-y-4 bg-black/50 backdrop-blur">
       <h3 className="text-xl font-bold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-pink-500">
-        Simulation Result
+        Strategy Analysis
       </h3>
 
       <div className="space-y-2">
         <div className="flex items-center justify-between">
-          <span className="text-muted-foreground">Borrowed Token</span>
+          <span className="text-muted-foreground">Trading Asset</span>
           <span className="font-mono">{result.token} {result.amount}</span>
         </div>
 
         <div className="flex items-center justify-between">
-          <span className="text-muted-foreground">Arbitrage Path</span>
+          <span className="text-muted-foreground">Liquidity Path</span>
           <div className="flex items-center gap-2">
             <span>Uniswap</span>
             <ArrowRight className="w-4 h-4" />
@@ -34,7 +34,7 @@ export function SimulationResult({ result }) {
         </div>
 
         <div className="flex items-center justify-between">
-          <span className="text-muted-foreground">Gas Cost</span>
+          <span className="text-muted-foreground">Protocol Fee</span>
           <div>
             <span className="font-mono">0.0042 ETH</span>
             <span className="text-muted-foreground ml-2">(~$8.40)</span>

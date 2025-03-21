@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card"
 import { ConnectWallet } from "@/components/connect-wallet"
 import { FlashLoanForm } from "@/components/dashboard/flash-loan-form"
 import { SimulationResult } from "@/components/dashboard/simulation-result"
+import { GasTracker } from "@/components/dashboard/gas-tracker"
 import { TradeHistory } from "@/components/dashboard/trade-history"
 import { useState } from "react"
 
@@ -60,6 +61,7 @@ export default function Dashboard() {
           {/* Right Column */}
           <div className="space-y-6">
             <SimulationResult result={simulationResult} />
+            <GasTracker />
           </div>
         </div>
 
